@@ -1,0 +1,139 @@
+/* === Reset CSS (2025) === */
+
+/* 1. Box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* 3. Remove list styles on ul, ol elements with a list role */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+/* 4. Set core body defaults */
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* 5. Remove default padding */
+ul,
+ol {
+    padding: 0;
+}
+
+/* 6. Make images easier to work with */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* 7. Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    color: inherit;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+/* 8. Remove all animations and transitions for users that prefer reduced motion */
+// @media (prefers-reduced-motion: reduce) {
+//   *, *::before, *::after {
+//     animation-duration: 0.01ms !important;
+//     animation-iteration-count: 1 !important;
+//     transition-duration: 0.01ms !important;
+//     scroll-behavior: auto !important;
+//   }
+// }
+
+/* 9. Avoid text overflows */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    overflow-wrap: break-word;
+}
+
+/* 10. Create a root stacking context */
+#root,
+#app {
+    isolation: isolate;
+}
+
+/* 11. Anchor defaults */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 12. Button & link reset */
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+/* 13. Form element appearance reset */
+textarea {
+    resize: vertical;
+}
+
+/* 14. Table reset */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* 15. Remove built-in form styling on some inputs */
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button,
+::-webkit-search-cancel-button,
+::-webkit-search-decoration {
+    appearance: none;
+}
+
+/* 16. Set default font-smoothing */
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* 17. Touch highlight off for mobile */
+a,
+button,
+input {
+    -webkit-tap-highlight-color: transparent;
+}
