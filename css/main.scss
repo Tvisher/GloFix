@@ -247,7 +247,7 @@ body {
 .steps {
     display: flex;
     flex-wrap: wrap;
-    gap: pxToRem(30);
+    gap: pxToRem(60) pxToRem(30);
     padding-top: pxToRem(60);
 }
 
