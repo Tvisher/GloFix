@@ -270,7 +270,8 @@ body {
 }
 
 .list-secton,
-.info-section {
+.info-section,
+.table-section {
     padding: pxToRem(50) 0;
 }
 
@@ -356,4 +357,61 @@ body {
     font-size: pxToRem(18);
     font-weight: 400;
     line-height: 140%;
+}
+
+.title-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: pxToRem(50);
+}
+
+
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: rgba(1, 17, 42, 0.60);
+}
+
+.custom-table th,
+.custom-table td {
+    padding: pxToRem(16) pxToRem(20);
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.custom-table td {
+    padding: pxToRem(24) pxToRem(20);
+    font-size: pxToRem(18);
+
+}
+
+.custom-table th {
+    font-size: pxToRem(14);
+    color: #fff;
+    opacity: .6;
+    font-weight: 400;
+    border-bottom: 1px solid #007BFF;
+}
+
+.custom-table tbody tr td:first-child {
+    font-size: pxToRem(20);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+.custom-table tr td:nth-child(even),
+.custom-table tr th:nth-child(even) {
+    background-color: #000618;
+}
+
+
+.custom-table th:not(:first-child),
+.custom-table td:not(:first-child) {
+    width: pxToRem(168);
+    /* можно заменить на другую фиксированную ширину */
 }
